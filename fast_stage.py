@@ -13,7 +13,7 @@ deepseek = OpenAI(
 
 def call_fast_model(query:str) -> str:
     response = deepseek.chat.completions.create(
-        model="deepseek-v4-pro",
+        model="deepseek-flash",
         messages=[{"role": "user", "content": query}],
         extra_body={
             "thinking": {"type": "disabled"},
